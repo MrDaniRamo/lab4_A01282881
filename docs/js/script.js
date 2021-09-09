@@ -53,14 +53,20 @@ function TodoMark(){
 
 function TodoDelete(){
     
-    /*
+    //eliminar solo los marcados
+
     var todos = document.getElementsByName("todo")
     for (var i=0; i< todos.length; i++){
-        if (todos[i].checked)
+        if (todos[i].checked) {
         todos[i].parentElement.remove()
-    }
-    */
-   var list = document.getElementById("todoList")
-   list.innerHTML=""
+        i--;
+         }
+    } 
+
+
+    //elminiar todos los elementos de la lista
+
+    //var list = document.getElementById("todoList")
+    //list.innerHTML=""
 
 }
